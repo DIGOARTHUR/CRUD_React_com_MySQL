@@ -57,11 +57,12 @@ app.post("/api/insert", (req, res) => {
 ///////////////////////
 // DELETAR DADOS
 ///////////////////////
-app.delete("/api/delete/:movieName", (req, res) => {
-    const name = req.params.movieName;
-    const sqlDelete = "DELETE FROM list_movies WHERE movieName=?";
+app.delete("/api/delete/:id", (req, res) => {
+    const id = req.params.id;
+    console.log(id)
+    const sqlDelete = "DELETE FROM list_movies WHERE id=?";
 
-    con.query(sqlDelete, name, (err, result) => {
+    con.query(sqlDelete, id, (err, result) => {
         if (err) console.log(err);
 
     })
@@ -77,6 +78,8 @@ app.put("/api/update/", (req, res) => {
         if (err) console.log(err);
     });
 });
+
+
 
 app.listen(3002, () => {
     console.log("running on port 3002")
