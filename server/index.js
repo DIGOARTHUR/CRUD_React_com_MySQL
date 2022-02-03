@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 con.connect(function (err) {
     if (err) throw err;
-    console.log("Conectado!");
+    console.log("Conexão ao Banco de Dados feita com êxito! \n ===============\n   CONECTADO! \n ==============");
 });
 
 console.log()
