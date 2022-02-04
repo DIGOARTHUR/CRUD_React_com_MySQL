@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Axios from 'axios';
 import './style.css'
 import { RiDeleteBin6Line,RiEdit2Line} from "react-icons/ri";
+import filmesPDF from '../../Reports/Filmes/filmes';
 
 export function DataList (){
 
@@ -52,7 +53,10 @@ export function DataList (){
   
     return(
         <>
-       
+
+       <button onClick={(e)=>filmesPDF(movieReviewList)} className='generationPDFButton'>Gerar PDF</button>
+
+
       <div className='form'>
       <h1> CRUD APPLICATION </h1>
       

@@ -1,4 +1,11 @@
-
+.generationPDFButton{
+  background-color: rgba(220, 53, 70, 0.925);
+  border:0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color:rgb(253, 252, 252)
+}
 
 table {
     
