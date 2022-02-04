@@ -8,6 +8,8 @@ export function DataList (){
    
     const [movieReviewList, setMovieList] = useState([]);
     const [newReview, setNewReview] = useState("");
+    const [movieName, setMovieName] = useState('');
+    const [review, setReview] = useState('');
   
     //REQUISIÇÃO GET - OBTER DADOS
     useEffect(() => {
@@ -33,13 +35,42 @@ export function DataList (){
       });
       setNewReview('');
     };
+
+    
+     //REQUISIÇÃO POST - INSERIR DADOS
+     const submitCadastro = () => {
+      Axios.post('http://localhost:3002/api/insert', {
+        movieName: movieName,
+        movieReview: review
+      }).then(() => {
+        setMovieList([...movieReviewList, {
+          movieName: movieName,
+          movieReview: review
+        }])
+      })
+    };
   
     return(
         <>
-        
+       
       <div className='form'>
+      <h1> CRUD APPLICATION </h1>
       
+        <div className='header'>
+        <label>Movie Name:</label>
+        <input type="text"
+          name="movieName"
+          onChange={(e) => { setMovieName(e.target.value) }}
+        />
 
+        <label>Review:</label>
+        <input type="text"
+          name="review"
+          onChange={(e) => { setReview(e.target.value) }}
+        />
+        <button onClick={submitCadastro}>Submit</button>
+
+        </div>
         
         <div>
 

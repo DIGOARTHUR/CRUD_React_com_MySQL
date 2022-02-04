@@ -1,3 +1,5 @@
+
+
 table {
     
     margin: 2rem auto;
@@ -20,3 +22,14 @@ table {
       font-size: 15px;
   }
 
+
+  div .header,h1{
+    width: 780px;
+    margin: 0 auto;
+    
+    text-align: center;
+  }
+
+
+
+ 
