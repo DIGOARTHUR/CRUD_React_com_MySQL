@@ -4,7 +4,7 @@
  
 
 # <img  alt="skills"  width="40" height="40" src="https://user-images.githubusercontent.com/59892368/148622497-164365e8-f6b0-4f40-bc75-a0ed4da6059b.png">  Sobre a aplicação <!---write here : talk a little about project: what's does, example.  -->
-> Nesta aplicação estou tendo a oportunidade de conhecer um pouco sobre o relacionamento entre Banco de Dados (MySQL) e Fron-End (React) por meio de uma API (NodeJS). Esta aplicação faz requições de 
+> Nesta aplicação estou tendo a oportunidade de conhecer um pouco sobre o relacionamento entre Banco de Dados (MySQL) e Front-End (React) por meio de uma API (NodeJS). A ideia é criar um site de registros de filmes por meio de cards, criando uma espécia de CRUD.
 
 #### Stacks:
 <p align="left">
